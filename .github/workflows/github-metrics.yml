@@ -17,4 +17,4 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          plugin_languages: true
+          plugin_languages: yes
