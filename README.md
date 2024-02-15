@@ -1,3 +1,3 @@
 ##### Metrics
 
-![Metrics](/metrics.classic.svg)
+![Metrics](/github-metrics.svg)
