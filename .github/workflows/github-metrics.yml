@@ -1,3 +1,4 @@
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
   # Schedule updates (each hour)
@@ -25,13 +26,23 @@ jobs:
 
           # Options
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: ""
           config_timezone: Europe/London
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+          plugin_followup: yes
+          plugin_followup_archived: yes
+          plugin_followup_sections: repositories
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
+          plugin_languages_ignored: nix
           plugin_languages_limit: 8
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
